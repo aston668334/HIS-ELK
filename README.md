@@ -3,6 +3,7 @@
 This project is a Python-based system for automatically requesting, analyzing, and visualizing data from the ELK (Elasticsearch, Logstash, Kibana) stack integrated with a Hospital Information System (HIS). The HIS-ELK system aims to streamline data retrieval and visualization, facilitating efficient weekly reporting.
 
 ## Table of Contents
+- [ELK introduction](#elk-introduction)
 - [HIS-ELK System Structure](#his-elk-system-structure)
 - [Features](#features)
 - [Install ELK Master](#install-elk-master)
@@ -15,6 +16,17 @@ This project is a Python-based system for automatically requesting, analyzing, a
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## ELK introduction
+The ELK stack, consisting of Elasticsearch, Logstash, and Kibana, is a powerful solution for real-time data analysis and visualization.
+- Elasticsearch: A distributed search and analytics engine for storing and indexing data.
+- Logstash: A data processing pipeline that ingests, transforms, and sends data to Elasticsearch.
+- Kibana: A visualization tool for exploring and interacting with data stored in Elasticsearch.
+
+Together, they enable comprehensive log and event data analysis, making it easier to monitor applications, troubleshoot issues, and gain insights. The ELK stack is scalable, flexible, and widely used for its powerful capabilities in handling large volumes of data efficiently.
+
+This is a sort ppt for introduction [PPT](https://gamma.app/docs/HIS-ELK-4q9fkxld3pgwf9w).
+
 
 ## HIS-ELK System Structure
 ![HIS-ELK System Structure](./ELK_structure/HIS_ELK.drawio.png)
