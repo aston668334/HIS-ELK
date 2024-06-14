@@ -28,11 +28,10 @@ The diagram above illustrates the system architecture of the HIS-ELK integration
 - **Scheduling:** Automates the report generation process on a weekly basis.
 
 ## Install ELK Master
-To install the ELK stack, follow the instructions in this [Elastic blog post](https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose-part-2).
-
-### Prerequisites
 - Docker and Docker Compose installed
-- Clone the repository: `git clone https://github.com/elkninja/elastic-stack-docker-part-two.git`
+- Clone the repository: `git clone https://github.com/aston668334/HIS-ELK.git`
+
+This project is based on this blog [Elastic blog post](https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose-part-2).
 
 ### Setup
 
