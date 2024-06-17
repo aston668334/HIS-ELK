@@ -1,6 +1,6 @@
 # HIS-ELK
 
-This project is a Python-based system for automatically requesting, analyzing, and visualizing data from the ELK (Elasticsearch, Logstash, Kibana) stack integrated with a Hospital Information System (HIS). The HIS-ELK system aims to streamline data retrieval and visualization, facilitating efficient weekly reporting.
+The HIS-ELK project is designed to automatically monitor Hospital Information System (HIS) services and server statuses. By integrating the ELK (Elasticsearch, Logstash, Kibana) stack, this system streamlines data retrieval and visualization, facilitating efficient monitoring and analysis of HIS performance and issues.
 
 ## Table of Contents
 - [ELK introduction](#elk-introduction)
