@@ -83,6 +83,11 @@ Open your browser and go to http://localhost:9200
 
 ## Deploy ELK Client to VM
 
+### ADD fleet server
+
+Click **Action**and set Name( what ever you want) add URL (ex. https://192.168.101.11:8220)
+![fleet-server-setting](./ELK_structure/截圖%202024-06-17%20下午4.20.12.png)
+
 ### Environment Check
 Ensure the VM can connect to the ELK master (192.168.101.11).
 

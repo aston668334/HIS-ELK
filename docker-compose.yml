@@ -119,6 +119,7 @@ services:
       - xpack.security.transport.ssl.verification_mode=certificate
       - xpack.license.self_generated.type=${LICENSE}
     mem_limit: ${ES_MEM_LIMIT}
+    cpus: ${ES_CPU_LIMIT}
     ulimits:
       memlock:
         soft: -1
