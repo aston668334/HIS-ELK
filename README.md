@@ -72,8 +72,8 @@ cat /tmp/ca.crt
 **Cert must start with**
 ```bash
 ssl:
-certificate_authorities:
-- |
+    certificate_authorities:
+    - |
 ```
 
 #### Step 4: Interact with the Web Application

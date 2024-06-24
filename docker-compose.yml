@@ -120,6 +120,7 @@ services:
       - xpack.license.self_generated.type=${LICENSE}
     mem_limit: ${ES_MEM_LIMIT}
     cpus: ${ES_CPU_LIMIT}
+
     ulimits:
       memlock:
         soft: -1
@@ -326,26 +327,3 @@ services:
         condition: service_healthy
       kibana:
         condition: service_healthy
-
-  grafana:
-    image: grafana/grafana:latest
-    volumes:
-      - grafana_data:/var/lib/grafana
-      - grafana_reports:/reports # Mount volume for Grafana Reports
-    ports:
-      - "3000:3000"
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-      - GF_USERS_ALLOW_SIGN_UP=false
-    depends_on:
-      - es01
-
-  grafana-reporter:
-    image: izakmarais/grafana-reporter
-    volumes:
-      - grafana_reports:/app/reports # Mount volume for Grafana Reports
-    ports:
-      - "8686:8686"
-    environment:
-      - GRAFANA_URL=http://grafana:3000 # Assuming Grafana container is reachable via this hostname
